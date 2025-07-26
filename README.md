@@ -1,7 +1,3 @@
-Here’s the rewritten version of the README to match **BGC (Biagote Coin)** instead of Litecoin, while preserving the structure and intent of the original file:
-
----
-
 # BGC Core integration/staging tree
 
 \==================================
@@ -73,7 +69,3 @@ All major or sensitive changes should be tested by someone other than the develo
 We accept translation improvements via [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/), since BGC shares internationalization structures. Translation files are periodically imported into the BGC codebase.
 
 **Note**: Please don’t submit translation changes via GitHub pull requests—they will be overwritten by the next automated Transifex sync. See [doc/translation\_process.md](doc/translation_process.md) for more details.
-
----
-
-Let me know if you’d like a simplified version or want this in a file format like `README.md`.
