@@ -1,85 +1,79 @@
-Litecoin Core integration/staging tree
-=====================================
+Here’s the rewritten version of the README to match **BGC (Biagote Coin)** instead of Litecoin, while preserving the structure and intent of the original file:
 
-[![Build Status](https://travis-ci.org/litecoin-project/litecoin.svg?branch=master)](https://travis-ci.org/litecoin-project/litecoin)
+---
 
-https://litecoin.org
+# BGC Core integration/staging tree
 
-What is Litecoin?
-----------------
+\==================================
 
-Litecoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Litecoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Litecoin Core is the name of open source
-software which enables the use of this currency.
+// ![Build Status](https://travis-ci.org/bgc-project/bgc.svg?branch=master)
 
-For more information, as well as an immediately useable, binary version of
-the Litecoin Core software, see [https://litecoin.org](https://litecoin.org).
+[https://bgcnetwork.org](https://bgcnetwork.org)
 
-License
--------
+## What is BGC?
 
-Litecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+---
 
-Development Process
--------------------
+**BGC (Biagote Coin)** is a next-generation experimental digital currency designed to offer ultra-private, secure, and lightning-fast payments to anyone, anywhere in the world. BGC uses peer-to-peer technology and an advanced Proof-of-AI (POai) consensus mechanism to operate with no central authority. Transaction validation, coin issuance, and network security are carried out collectively by the decentralized network.
 
-The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/litecoin-project/litecoin/tags) are created
-regularly from release branches to indicate new official, stable release versions of Litecoin Core.
+**BGC Core** is the official open source software that enables the use and management of the BGC currency.
 
-The https://github.com/litecoin-project/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
+For more information, including downloadable binaries of BGC Core, visit: [https://bgcnetwork.org](https://bgcnetwork.org)
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
-and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
+## License
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/litecoin-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
+---
 
-Developer IRC can be found on Freenode at #litecoin-dev.
+**BGC Core** is released under the MIT license. See [COPYING](COPYING) for details or visit: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
-Testing
--------
+## Development Process
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+---
+
+The `master` branch is actively developed and frequently updated. While it's continuously built and tested (see `doc/build-*.md`), it may not always be stable. Official stable versions of BGC Core are marked with [tags](https://github.com/bgc-project/bgc/tags) based on release branches.
+
+The [BGC GUI repository](https://github.com/bgc-project/gui) is dedicated to graphical interface development. It shares the same `master` branch across related repositories. Tags and release branches are not maintained in the GUI repo—please fork only for development purposes.
+
+Contribution guidelines can be found in [CONTRIBUTING.md](CONTRIBUTING.md). Additional developer guidance is available in [doc/developer-notes.md](doc/developer-notes.md).
+
+To discuss development-related topics, visit the developer [mailing list](https://groups.google.com/forum/#!forum/bgc-dev) or join IRC on Freenode at `#bgc-dev`.
+
+## Testing
+
+---
+
+Testing and code review are critical. Pull requests may take time due to security and quality assurance reviews. You can help by testing and reviewing open pull requests.
 
 ### Automated Testing
 
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
+Developers are encouraged to write [unit tests](src/test/README.md) for any new code, and improve coverage of legacy code. Unit tests (if enabled in the configuration) can be run with:
 
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
+```bash
+make check  
+```
 
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and macOS, and that unit/sanity tests are run automatically.
+See [/src/test/README.md](/src/test/README.md) for more info.
+
+[Functional and regression tests](/test) written in Python are run automatically during CI builds and can also be run locally with:
+
+```bash
+test/functional/test_runner.py  
+```
+
+CI services like Travis CI build and test each pull request on Linux, macOS, and Windows platforms automatically.
 
 ### Manual Quality Assurance (QA) Testing
 
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+All major or sensitive changes should be tested by someone other than the developer who wrote them. Test plans in pull requests are encouraged to guide QA reviewers.
 
-Translations
-------------
+## Translations
 
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Litecoin periodically.
+---
 
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
+We accept translation improvements via [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/), since BGC shares internationalization structures. Translation files are periodically imported into the BGC codebase.
 
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+**Note**: Please don’t submit translation changes via GitHub pull requests—they will be overwritten by the next automated Transifex sync. See [doc/translation\_process.md](doc/translation_process.md) for more details.
+
+---
+
+Let me know if you’d like a simplified version or want this in a file format like `README.md`.
